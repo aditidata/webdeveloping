@@ -3,15 +3,72 @@
     color: black;
 }
 h1{
+    color: blue;
     text-align: center;
     text-transform: capitalize;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: black;
+    text-align: left;
 }
 *{
     font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+button{
+    background-color: #f08804;
 }
 #outer{
     font-size: 25px;
+    color: black;
 }
 #inner{
     font-size: 18px;
+    color: black;
+}
+#traffic-signal {
+  width: 120px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 50px auto; /* center the signal horizontally */
+}
+
+.light {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: grey; /* default off */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+#navbar{
+    height: 60px;
+    background-color: black;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+#button{
+    background-color: black;
+    color: white;
+}
+a{
+    margin-right: 180px;
 }
