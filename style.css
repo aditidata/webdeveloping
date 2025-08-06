@@ -2,3 +2,16 @@
     background-color: aliceblue;
     color: black;
 }
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 18px;
+}
