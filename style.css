@@ -11,10 +11,7 @@ h1{
     border-color: black;
     text-align: left;
 }
-*{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-}
+
 button{
     background-color: #f08804;
 }
@@ -82,4 +79,33 @@ a{
   width: 50%;
   background-color: blue;
   margin-left: 10%;
+}
+div{
+  height: 100px;
+  width: 100px;
+  background-image:url("jakob-owens-Qs5bAQVQAtA-unsplash.jpg");
+  background-size: cover;
+  position:absolute;
+  right: 0px;
+ 
+}
+#pg1{
+  position: static;
+  background-image:url("jakob-owens-Qs5bAQVQAtA-unsplash.jpg");
+  background-size: cover;
+}
+#pg2{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: green;
+}
+#pg3{
+  position: absolute;
+  top: 10px;
+  background-color: blueviolet;
+}
+#pg4{
+  position: fixed;
+  right: 10px;
 }
