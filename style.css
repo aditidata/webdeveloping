@@ -72,3 +72,14 @@ button{
 a{
     margin-right: 180px;
 }
+#box1{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+#box2{
+  height: 50px;
+  width: 50%;
+  background-color: blue;
+  margin-left: 10%;
+}
