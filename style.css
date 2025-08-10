@@ -2,14 +2,23 @@ div{
   height: 100px;
   width: 100px;
   background-color: aliceblue;
+  border: 2px solid black;
+  transition-property: all;
+  position:absolute;
+  top: 100px;
+  transition-duration: 2s;
+  transition-timing-function:steps(5) ;
+  transition-delay: 1s;
+transform: rotate(45deg);
+transform: scale(2);
 }
-@media(max-width:300px){
-  div{
-  background-color: yellow;
+div:hover{
+  background-color: lightblue;
+  color: brown;
+  font-size: 30px;
+  transform: translateX(10px);
+  transform: skew(45deg);
 }
-}
-@media(min-width:300px) and (max-width:500px){
-  div{
-  background-color:green;
-}
+div:active{
+  background-color: lightgreen;
 }
