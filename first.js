@@ -14,6 +14,9 @@
 // else (score>=0 && score<49) 
 //     console.log("E");
 let str="Aditi";
+let size=0;
 for(let i of str){
     console.log(i);
+    size++;
 }
+console.log(size);
