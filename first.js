@@ -38,10 +38,14 @@ for(let i=0;i<=100;i++){
         }
 }
 //game to guess correct
-let gameNum=35;
-let guessNum=prompt("Guess the number");
-while(guessNum!=gameNum){
-guessNum=prompt("Wrong no.Guess again");
+// let gameNum=35;
+// let guessNum=prompt("Guess the number");
+// while(guessNum!=gameNum){
+// guessNum=prompt("Wrong no.Guess again");
 
-}
-console.log("won")
+// }
+// console.log("won")
+let fullName=prompt("enter full name");
+let length=fullName.length;
+userName="@"+fullName+length;
+console.log(userName);
