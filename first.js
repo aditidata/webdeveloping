@@ -13,10 +13,35 @@
 // }
 // else (score>=0 && score<49) 
 //     console.log("E");
-let str="Aditi";
-let size=0;
-for(let i of str){
-    console.log(i);
-    size++;
+// let str="Aditi";
+// let size=0;
+// for(let i of str){
+//     console.log(i);
+//     size++;
+// }
+// console.log(size);
+let student={
+    name:"Aditi",
+    age:20,
+    marks:99,
+    isPass:true
+};
+for(let i in student){
+    console.log(i);//returns key
+    console.log(student[i]);//returns value
 }
-console.log(size);
+
+//print all even nos from 0 to 100
+for(let i=0;i<=100;i++){
+    if(i%2==0){
+        console.log(i);
+        }
+}
+//game to guess correct
+let gameNum=35;
+let guessNum=prompt("Guess the number");
+while(guessNum!=gameNum){
+guessNum=prompt("Wrong no.Guess again");
+
+}
+console.log("won")
