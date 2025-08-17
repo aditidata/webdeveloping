@@ -75,60 +75,74 @@
 // companies.splice(2,1,"ola");
 // console.log(companies);
 // companies.push("Amazon");
-function countVowels(str){
-    let count = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i'||str[i] === 'o' || str[i] === 'u'){
-            count++;
-        }
-}
-return count;
-}
-//arrow fun
-const countvowel=(str)=>{let count = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i'||str[i] === 'o' || str[i] === 'u'){
-            count++;
-        }
-}
-return count;}
+// function countVowels(str){
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i'||str[i] === 'o' || str[i] === 'u'){
+//             count++;
+//         }
+// }
+// return count;
+// }
+// //arrow fun
+// const countvowel=(str)=>{let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i'||str[i] === 'o' || str[i] === 'u'){
+//             count++;
+//         }
+// }
+// return count;}
 
-let nums=[2,3,4,5,6];
-let evenArr=nums.filter((num)=>{
-    return num%2===0;
-});
-console.log(evenArr);
-let newArr=nums.map((val)=>{
-    return val*2;
-});
-nums.forEach((num)=>{
-    console.log(num*num);
-})
-let arr=[1,2,3,4,5];
-const output=arr.reduce((res,curr)=>{
-    return res+curr;
-});
-console.log(output);
+// let nums=[2,3,4,5,6];
+// let evenArr=nums.filter((num)=>{
+//     return num%2===0;
+// });
+// console.log(evenArr);
+// let newArr=nums.map((val)=>{
+//     return val*2;
+// });
+// nums.forEach((num)=>{
+//     console.log(num*num);
+// })
+// let arr=[1,2,3,4,5];
+// const output=arr.reduce((res,curr)=>{
+//     return res+curr;
+// });
+// console.log(output);
 
-let marks=[97,64,89,99,54];
-let topp=marks.filter((mark)=>{
-    return mark>90;
-})
-console.log(topp);
-let n=prompt("enetr number");
-let arra =[];
-for(let i=1;i<=n;i++){
-arra[i-1]=i;
+// let marks=[97,64,89,99,54];
+// let topp=marks.filter((mark)=>{
+//     return mark>90;
+// })
+// console.log(topp);
+// let n=prompt("enetr number");
+// let arra =[];
+// for(let i=1;i<=n;i++){
+// arra[i-1]=i;
+// }
+// console.log(arra);
+// let summ=arra.reduce((prev,cur)=>
+// {
+//     return prev+cur;
+// });
+// console.log(summ);
+
+// let factorial=arra.reduce((prev,cur)=>
+// {
+//     return prev*cur;
+// });
+// console.log(factorial);
+console.dir(document.body.firstChild);
+let heading=document.querySelector("h1");
+let h2=document.querySelector("h2");
+console.dir(h2.innerText);
+h2.innerText=h2.innerText+"from Ap";
+let divs=document.querySelectorAll(".box");
+console.log(divs[0]);
+divs[0].innerText="new first";
+//imp
+let idx=1;
+for(div of divs){
+    div.innerText=`new value ${idx}`;
+    idx++;
 }
-console.log(arra);
-let summ=arra.reduce((prev,cur)=>
-{
-    return prev+cur;
-});
-console.log(summ);
-
-let factorial=arra.reduce((prev,cur)=>
-{
-    return prev*cur;
-});
-console.log(factorial);
