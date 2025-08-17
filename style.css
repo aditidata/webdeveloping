@@ -15,3 +15,10 @@
     transform: rotate(360deg);
   }
 }
+.content{
+  position: absolute;
+  color: red;
+}
+.newClass{
+  background-color: green;
+}

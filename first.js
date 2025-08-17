@@ -132,17 +132,27 @@
 //     return prev*cur;
 // });
 // console.log(factorial);
-console.dir(document.body.firstChild);
-let heading=document.querySelector("h1");
-let h2=document.querySelector("h2");
-console.dir(h2.innerText);
-h2.innerText=h2.innerText+"from Ap";
-let divs=document.querySelectorAll(".box");
-console.log(divs[0]);
-divs[0].innerText="new first";
-//imp
-let idx=1;
-for(div of divs){
-    div.innerText=`new value ${idx}`;
-    idx++;
-}
+// console.dir(document.body.firstChild);
+// let heading=document.querySelector("h1");
+// let h2=document.querySelector("h2");
+// console.dir(h2.innerText);
+// h2.innerText=h2.innerText+"from Ap";
+// let divs=document.querySelectorAll(".box");
+// console.log(divs[0]);
+// divs[0].innerText="new first";
+// //imp
+// let idx=1;
+// for(div of divs){
+//     div.innerText=`new value ${idx}`;
+//     idx++;
+// }
+let newBtn=document.createElement("Button");
+newBtn.innerText="click me!";
+newBtn.style.background="red";
+newBtn.style.color="white";
+document.querySelector("body").prepend(newBtn);
+
+//q2
+let para=document.querySelector("p");
+//overwrite class name while adding a new one
+para.classList.add("newClass");
