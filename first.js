@@ -240,5 +240,10 @@
 // });
 // alert("hello");
 function hello(){
-    document.querySelector("h1").innerText="hello world";
+    const heading=document.querySelector("h1");
+    if(heading.innerText==="hello world"){
+        heading.innerText="goodbye world";
+    }
+    else{heading.innerText="hello world";
+    }
 }
