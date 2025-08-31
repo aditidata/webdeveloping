@@ -257,8 +257,13 @@
 //     }
 // }
 document.addEventListener("DOMContentLoaded",function(){
-    document.querySelector("form").onsubmit=function(){
-        const name=document.querySelector('#name').value;
-        alert(`hello ${name}`);
+    document.querySelector('#red').onclick=function(){
+        document.body.style.backgroundColor="red";
     };
+    document.querySelector('#green').onclick=function(){
+        document.body.style.backgroundColor="green";
+    }
+    document.querySelector('#blue').onclick=function(){
+        document.body.style.backgroundColor="blue";
+    }
 });
