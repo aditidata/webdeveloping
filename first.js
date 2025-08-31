@@ -238,3 +238,4 @@ choices.forEach((choice) => {
         playGame(userChoice);
     });
 });
+alert("hello");
