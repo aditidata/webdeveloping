@@ -247,3 +247,12 @@ function hello(){
     else{heading.innerText="hello world";
     }
 }
+let counter=0;
+function count(){
+    counter++
+    const heading=document.querySelector("h1");
+    heading.innerText=counter;
+    if(counter%10===0){
+        alert(`congrats u reached ${counter}`);
+    }
+}
