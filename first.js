@@ -247,15 +247,20 @@
 //     else{heading.innerText="hello world";
 //     }
 // }
-// let counter=0;
-// function count(){
-//     counter++
-//     const heading=document.querySelector("h1");
-//     heading.innerText=counter;
-//     if(counter%10===0){
-//         alert(`congrats u reached ${counter}`);
-//     }
-// }
+let counter=0;
+function count(){
+    counter++
+    const heading=document.querySelector("h1");
+    heading.innerText=counter;
+    if(counter%10===0){
+        alert(`congrats u reached ${counter}`);
+    }
+}
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('button').onclick = count;
+    setInterval(count,1000);
+});
+
 // document.addEventListener("DOMContentLoaded", function () {
 //     document.querySelectorAll('button').forEach(function (button) {
 //         button.onclick = function () {
@@ -263,19 +268,19 @@
 //         };
 //     });
 // });
-document.addEventListener("DOMContentLoaded",function(){
-    document.querySelector('#submit').disabled=true;
-    document.querySelector('#task').onkeyup=()=>{
-        document.querySelector('#submit').disabled=false;
-    }
-    document.querySelector('form').onsubmit=()=>{
-       const task= document.querySelector('#task').value;
-       const li=document.createElement('li');
-       li.innerHTML=task;
-         document.querySelector('#tasks').append(li);
-             document.querySelector('#submit').disabled=true;
+// document.addEventListener("DOMContentLoaded",function(){
+//     document.querySelector('#submit').disabled=true;
+//     document.querySelector('#task').onkeyup=()=>{
+//         document.querySelector('#submit').disabled=false;
+//     }
+//     document.querySelector('form').onsubmit=()=>{
+//        const task= document.querySelector('#task').value;
+//        const li=document.createElement('li');
+//        li.innerHTML=task;
+//          document.querySelector('#tasks').append(li);
+//              document.querySelector('#submit').disabled=true;
 
 
-       return false;
-    }
-});
+//        return false;
+//     }
+// });
