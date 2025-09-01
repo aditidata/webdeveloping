@@ -247,18 +247,21 @@
 //     else{heading.innerText="hello world";
 //     }
 // }
-let counter=0;
+if(!localStorage.getItem('counter')){
+    localStorage.setItem('counter',0);
+}
 function count(){
+    let counter=localStorage.getItem('counter');
     counter++
     const heading=document.querySelector("h1");
     heading.innerText=counter;
-    if(counter%10===0){
-        alert(`congrats u reached ${counter}`);
-    }
+    localStorage.setItem('counter',counter);
+    
 }
 document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('h1').innerText=localStorage.getItem('counter');
     document.querySelector('button').onclick = count;
-    setInterval(count,1000);
+    
 });
 
 // document.addEventListener("DOMContentLoaded", function () {
