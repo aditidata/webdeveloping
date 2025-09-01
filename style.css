@@ -1,4 +1,4 @@
-/* .loader{
+/* /* .loader{
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -22,7 +22,7 @@
 .newClass{
   background-color: green;
 } */
- *{
+ /* *{
   margin: 0;
   padding: 0;
   text-align: center;
@@ -75,4 +75,4 @@
  .msg{
   background-color: black;
   color: white;
- }
+ } */ */

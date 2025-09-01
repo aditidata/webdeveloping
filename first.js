@@ -256,10 +256,26 @@
 //         alert(`congrats u reached ${counter}`);
 //     }
 // }
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('button').forEach(function (button) {
-        button.onclick = function () {
-            document.querySelector('#hello').style.color = button.dataset.color;
-        };
-    });
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.querySelectorAll('button').forEach(function (button) {
+//         button.onclick = function () {
+//             document.querySelector('#hello').style.color = button.dataset.color;
+//         };
+//     });
+// });
+document.addEventListener("DOMContentLoaded",function(){
+    document.querySelector('#submit').disabled=true;
+    document.querySelector('#task').onkeyup=()=>{
+        document.querySelector('#submit').disabled=false;
+    }
+    document.querySelector('form').onsubmit=()=>{
+       const task= document.querySelector('#task').value;
+       const li=document.createElement('li');
+       li.innerHTML=task;
+         document.querySelector('#tasks').append(li);
+             document.querySelector('#submit').disabled=true;
+
+
+       return false;
+    }
 });
