@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange</title>
+</head>
+<body>
+  <form id="currency-form">
+    <input id="Currency" type="number" placeholder="Enter amount in USD">
+    <input type="submit" value="Convert to EUR">
+  </form>
+  <div id="results"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('#currency-form').onsubmit = function(e) {
+        e.preventDefault(); // prevent page reload
+
+        const amount = parseFloat(document.getElementById('Currency').value);
+        if (isNaN(amount)) {
+          document.getElementById('results').innerText = "Please enter a valid number.";
+          return;
+        }
+
+        fetch('https://api.exchangerate-api.com/v4/latest/USD')
+          .then(response => response.json())
+          .then(data => {
+            const rate = data.rates.EUR;
+            const converted = (amount * rate).toFixed(2);
+            document.getElementById('results').innerHTML = 
+              `<h3>${amount} USD = ${converted} EUR</h3><p>1 USD = ${rate} EUR</p>`;
+          })
+          .catch(err => {
+            document.getElementById('results').innerText = "Error fetching exchange rate.";
+            console.error(err);
+          });
+      };
+    });
+  </script>
+</body>
+</html>
