@@ -1,6 +1,10 @@
 body {
   font-family: Arial;
 }
+.green{
+  color: green;
+  text-decoration: dashed underline;
+}
 
 #mainImg {
   width: 35%;
