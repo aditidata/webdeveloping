@@ -11,10 +11,20 @@ btn.addEventListener("click",function(){
     ul.appendChild(item);
     input.value=""
 });
-let deleteButtons=document.querySelectorAll('.delete');
-for(let delbtn of deleteButtons){
-    delbtn.addEventListener("click",function(event){
-        let parent=delbtn.parentElement;
-        console.log(parent);
+
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName==="BUTTON"){
+        let parent=event.target.parentElement;
         parent.remove();
-    })};
+    }
+});
+
+
+
+// let deleteButtons=document.querySelectorAll('.delete');
+// for(let delbtn of deleteButtons){
+//     delbtn.addEventListener("click",function(event){
+//         let parent=delbtn.parentElement;
+//         console.log(parent);
+//         parent.remove();
+//     })};
