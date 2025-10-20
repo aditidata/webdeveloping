@@ -17,6 +17,14 @@ document.addEventListener("keypress",function(){
             btn.classList.remove("flash");
         },500);
     }
+
+function userFlash(btn){
+        btn.classList.add("userflash");
+        setTimeout(function(){
+            btn.classList.remove("userflash");
+        },500);
+    }
+
     function levelup(){
         level++;
         h2.innerText="level "+level;
@@ -26,4 +34,13 @@ document.addEventListener("keypress",function(){
         let randomBtn=document.querySelector(`.${randomColor}`);
         btnFlash(randomBtn);
         btnFlash();
+    }
+    function btnPress(){
+        console.log(this);
+        let btn=this;
+        userFlash(btn);
+    }
+    let allbtns=document.querySelectorAll('.btn');
+    for(let btn of allbtns){
+        btn.addEventListener("click",btnPress);
     }
