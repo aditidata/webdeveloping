@@ -48,12 +48,13 @@ function checkAnswer(idx){
         }
     }
     else{
-        h2.innerText="game over, press any key to restart";
+        h2.innerHTML=`game over, your score is <b> ${level} </b> <br> press any key to restart`;
+        reset();
 }
 }
 
     function btnPress(){
-        console.log(this);
+        
         let btn=this;
         userFlash(btn);
 
@@ -65,4 +66,10 @@ function checkAnswer(idx){
     let allbtns=document.querySelectorAll('.btn');
     for(let btn of allbtns){
         btn.addEventListener("click",btnPress);
+    }
+    function reset(){
+        started=false;
+        gameseq=[];
+        userseq=[];
+        level=0;
     }
