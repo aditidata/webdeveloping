@@ -1,4 +1,2 @@
-const pi=3.14;
-const e=2.71;
 
-module.exports=123;
+exports.sum=(a,b)=>a+b;

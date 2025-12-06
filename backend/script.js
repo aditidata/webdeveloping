@@ -6,5 +6,6 @@ let args=process.argv;
 for(let i=2;i<args.length;i++){
     console.log("hello"+args[i]);
 }
-const someValue=require('./math.js');
-console.log(someValue);
+
+const math=require('./math.js');
+console.log(math.sum(4,5));
