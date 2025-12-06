@@ -7,5 +7,5 @@ for(let i=2;i<args.length;i++){
     console.log("hello"+args[i]);
 }
 
-const math=require('./math.js');
-console.log(math.sum(4,5));
+const fruits=require('./Fruits');
+console.log(fruits);
