@@ -1,11 +1,13 @@
-// let n=5;
-// for(let i=1;i<=n;i++){
-//     console.log("hell0" +i);
+// // let n=5;
+// // for(let i=1;i<=n;i++){
+// //     console.log("hell0" +i);
+// // }
+// let args=process.argv;
+// for(let i=2;i<args.length;i++){
+//     console.log("hello"+args[i]);
 // }
-let args=process.argv;
-for(let i=2;i<args.length;i++){
-    console.log("hello"+args[i]);
-}
 
-const fruits=require('./Fruits');
-console.log(fruits);
+// const fruits=require('./Fruits');
+// console.log(fruits);
+import {sum} from './math.js';
+console.log(sum(4,5));
