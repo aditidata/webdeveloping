@@ -4,9 +4,19 @@ let port = 3000;
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
-app.use((req,res)=>{
-    console.log('Request received');
+// app.use((req,res)=>{
+//     console.log('Request received');
+//     res.send({
+//         message: 'Hello from Express server!'
+//     });
+// });
+app.get('/', (req, res) => {
     res.send({
         message: 'Hello from Express server!'
+    });
+});
+app.get('/apple', (req, res) => {
+    res.send({
+        message: 'Hello from apple server!'
     });
 });
