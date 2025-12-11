@@ -10,13 +10,14 @@ app.listen(port, () => {
 //         message: 'Hello from Express server!'
 //     });
 // });
-app.get('/:username', (req, res) => {
-    console.log(req.params.username);
-    res.send({
-        message: 'Hello from nodemon!'
-    });
-});
-app.get('/apple', (req, res) => {
+// app.get('/:username', (req, res) => {
+//     console.log(req.params.username);
+//     res.send({
+//         message: 'Hello from nodemon!'
+//     });
+// });
+app.get('/search', (req, res) => {
+    console.log(req.query);
     res.send({
         message: 'Hello from apple server!'
     });
